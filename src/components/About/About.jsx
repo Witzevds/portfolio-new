@@ -9,7 +9,7 @@ const About = () => {
         <div className="about__image-description">
           <img
             className="about__left--image"
-            src="src/assets/images/witze-portret.jpg"
+            src="public/assets/images/witze-portret.jpg"
             alt="Witze Van der Straeten"
           />
           <div className="about__left--description">
@@ -46,7 +46,7 @@ const About = () => {
       <div className="about__right">
         <img
           className="about__right--image"
-          src="src/assets/images/10723.jpg"
+          src="public/assets/images/10723.jpg"
           alt="Background Illustration"
         />
       </div>
