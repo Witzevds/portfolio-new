@@ -3,21 +3,60 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 10%;
+  gap: 5rem;
 }
 .hero__title {
   font-size: 10rem;
   text-transform: uppercase;
+  letter-spacing: -1rem;
+  width: 45%;
+  line-height: 1.2; /* Space between lines */
+  display: block; /* Ensure words stack vertically */
+  text-align: left; /* Align text to the left if needed */
 }
 
+.hero__title .char {
+  display: inline-block; /* Ensure words are block-level for animation */
+  animation: breathe 4000ms infinite both;
+  animation-delay: calc(var(--char-index) * 700ms); /* Apply delay per word */
+}
+@keyframes breathe {
+  0% {
+    font-variation-settings: "wght" 100, "wdth" 85; /* Thin and condensed */
+    transform: scale(1); /* Normal size */
+  }
+  60% {
+    font-variation-settings: "wght" 700, "wdth" 100; /* Bold and wide */
+    transform: scale(1.1); /* Slight zoom */
+  }
+  100% {
+    font-variation-settings: "wght" 100, "wdth" 85; /* Back to thin and condensed */
+    transform: scale(1); /* Back to normal size */
+  }
+}
+
+.hero__description {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 45%;
+}
 .hero__description--btn {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1rem 2rem;
-  backgroung-color: #000;
+  background-color: var(--color-lime-green);
+  width: fit-content;
+  color: white;
+}
+
+.hero__description--btn:hover {
+  background-color: var(--color-dark);
+  transition: background-color 0.3s;
 }
 .hero__description--text {
   font-size: 2rem;
   font-weight: 300;
   margin-top: 2rem;
-  width: 30%;
+  gap: 1rem;
 }
