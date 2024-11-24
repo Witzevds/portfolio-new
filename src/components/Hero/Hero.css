@@ -4,6 +4,7 @@
   justify-content: space-between;
   padding: 0 10%;
   gap: 5rem;
+  height: 95vh;
 }
 .hero__title {
   font-size: 10rem;
