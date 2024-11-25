@@ -51,7 +51,11 @@
 }
 
 .skills {
-  margin-top: 3rem;
+  display: flex;
+  width: 70%;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .skills h2 {

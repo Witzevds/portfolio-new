@@ -32,13 +32,13 @@ const About = () => {
         <div className="skills">
           <h2>Skills</h2>
           <div className="skills-icons">
-            <img src="src/assets/images/react.svg" alt="React" />
-            <img src="src/assets/images/eleventy.svg" alt="Eleventy" />
-            <img src="src/assets/icons/html5.svg" alt="HTML5" />
-            <img src="src/assets/images/css.svg" alt="CSS3" />
+            <img src="src/assets/icons/react.svg" alt="React" />
+            <img src="src/assets/icons/eleventy.svg" alt="Eleventy" />
+            <img src="src/assets/icons/html.svg" alt="HTML5" />
+            <img src="src/assets/icons/css.svg" alt="CSS3" />
             <img src="src/assets/icons/figma.svg" alt="Figma" />
             <img src="src/assets/icons/photoshop.svg" alt="Photoshop" />
-            <img src="src/assets/images/html.svg" alt="Html" />
+            <img src="src/assets/icons/html.svg" alt="Html" />
             <img src="src/assets/icons/sql.svg" alt="SQL" />
           </div>
         </div>
