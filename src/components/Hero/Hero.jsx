@@ -9,7 +9,7 @@ const Hero = () => {
         {title.split(" ").map((word, index) => (
           <span key={index} className="char" style={{ "--char-index": index }}>
             {word}
-            <br /> {/* Add a new line after each word */}
+            <br />
           </span>
         ))}
       </h1>

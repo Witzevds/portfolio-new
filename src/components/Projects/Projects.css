@@ -19,6 +19,7 @@
 @media screen and (max-width: 768px) {
   .projects {
     gap: 1rem;
+
     padding: 1rem;
   }
 }
@@ -27,5 +28,9 @@
   .projects {
     gap: 0.5rem;
     padding: 0.5rem;
+
+    & .card__image {
+      display: none;
+    }
   }
 }

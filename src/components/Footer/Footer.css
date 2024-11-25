@@ -156,8 +156,10 @@
   }
 }
 
-/* Small Mobile (max-width: 480px) */
 @media screen and (max-width: 480px) {
+  .footer {
+    height: auto;
+  }
   .footer__left--contact-text {
     font-size: 1.8rem;
   }
