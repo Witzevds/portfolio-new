@@ -32,14 +32,14 @@ const About = () => {
         <div className="skills">
           <h2>Skills</h2>
           <div className="skills-icons">
-            <img src="src/assets/icons/react.svg" alt="React" />
-            <img src="src/assets/icons/eleventy.svg" alt="Eleventy" />
-            <img src="src/assets/icons/html.svg" alt="HTML5" />
-            <img src="src/assets/icons/css.svg" alt="CSS3" />
-            <img src="src/assets/icons/figma.svg" alt="Figma" />
-            <img src="src/assets/icons/photoshop.svg" alt="Photoshop" />
-            <img src="src/assets/icons/html.svg" alt="Html" />
-            <img src="src/assets/icons/sql.svg" alt="SQL" />
+            <img src="/assets/icons/react.svg" alt="React" />
+            <img src="/assets/icons/eleventy.svg" alt="Eleventy" />
+            <img src="/assets/icons/html.svg" alt="HTML5" />
+            <img src="/assets/icons/css.svg" alt="CSS3" />
+            <img src="/assets/icons/figma.svg" alt="Figma" />
+            <img src="/assets/icons/photoshop.svg" alt="Photoshop" />
+            <img src="/assets/icons/html.svg" alt="Html" />
+            <img src="/assets/icons/sql.svg" alt="SQL" />
           </div>
         </div>
       </div>
