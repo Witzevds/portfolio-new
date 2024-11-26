@@ -1,0 +1,137 @@
+.hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+  gap: 5rem;
+  height: 95vh;
+}
+
+.hero__title {
+  font-size: 10rem;
+  text-transform: uppercase;
+  letter-spacing: -1rem;
+  width: 45%;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.hero__title .char {
+  display: inline-block;
+  animation: breathe 4000ms infinite both;
+  animation-delay: calc(var(--char-index) * 700ms);
+}
+
+@keyframes breathe {
+  0% {
+    font-variation-settings: "wght" 100, "wdth" 85;
+    transform: scale(1);
+  }
+  60% {
+    font-variation-settings: "wght" 700, "wdth" 100;
+    transform: scale(1.1);
+  }
+  100% {
+    font-variation-settings: "wght" 100, "wdth" 85;
+    transform: scale(1);
+  }
+}
+
+.hero__description {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 45%;
+}
+
+.hero__description--text {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.hero__description--btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  background-color: var(--color-lime-green, #68d391);
+  width: fit-content;
+  color: white;
+}
+
+.hero__description--btn:hover {
+  background-color: var(--color-dark, #1e1e1e);
+  transition: background-color 0.3s;
+}
+
+/* Responsive Design */
+
+/* Tablets and smaller screens (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 5%;
+    gap: 3rem;
+    height: auto;
+  }
+
+  .hero__title {
+    font-size: 7rem;
+    letter-spacing: -0.5rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero__description {
+    width: 100%;
+  }
+
+  .hero__description--text {
+    font-size: 1.8rem;
+  }
+}
+
+/* Mobile Screens (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .hero__title {
+    font-size: 5rem;
+    letter-spacing: -0.3rem;
+  }
+
+  .hero__description--text {
+    font-size: 1.5rem;
+  }
+
+  .hero__description--btn {
+    padding: 0.8rem 1.5rem;
+  }
+}
+
+/* Small Mobile Screens (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .hero {
+    padding: 5%;
+  }
+
+  .hero__title {
+    font-size: 4rem;
+    letter-spacing: -0.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .hero__description--text {
+    font-size: 1.2rem;
+  }
+
+  .hero__description--btn {
+    margin: 0 auto;
+    padding: 0.7rem 1.2rem;
+  }
+}

@@ -1,0 +1,36 @@
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem;
+  height: 80vh;
+  margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .projects {
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projects {
+    gap: 1rem;
+
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .projects {
+    gap: 0.5rem;
+    padding: 0.5rem;
+
+    & .card__image {
+      display: none;
+    }
+  }
+}

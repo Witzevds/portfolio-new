@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "montserrat"; /* Give the font a name */
+  src: url("../fonts/Montserrat-variable.ttf") format("truetype"); /* Path to the font file */
+  font-weight: 100 900; /* Specify the weight range (from 100 to 900 for variable fonts) */
+  font-style: normal; /* Specify the style */
+  font-display: swap; /* Improves loading performance */
+}
+@font-face {
+  font-family: "wix"; /* Give the font a name */
+  src: url("../fonts/Wix-Display-variable.ttf") format("truetype"); /* Path to the font file */
+  font-weight: 100 900; /* Specify the weight range (from 100 to 900 for variable fonts) */
+  font-style: normal; /* Specify the style */
+  font-display: swap; /* Improves loading performance */
+}
+
+body {
+  font-family: "montserrat", sans-serif; /* Use the Montserrat font */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
