@@ -1,5 +1,5 @@
 import "./Card.css";
-
+import { Link } from "react-router-dom";
 const Card = ({ title, image }) => {
   return (
     <div className="card">
@@ -9,9 +9,11 @@ const Card = ({ title, image }) => {
         src={`/assets/images/${image}`}
         alt={title}
       />
-      <a className="card__btn" href="">
-        {title}
-      </a>
+      <Link to="/Projects">
+        <a className="card__btn" href="">
+          {title}
+        </a>
+      </Link>
     </div>
   );
 };

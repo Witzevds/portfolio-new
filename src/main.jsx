@@ -5,6 +5,7 @@ import Projects from "./pages/Projects/Projects.jsx";
 import App from "./pages/App/App.jsx";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
 const router = createBrowserRouter([
   {
     path: "/",
