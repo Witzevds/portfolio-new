@@ -132,6 +132,9 @@
   .skills-icons {
     justify-content: center;
   }
+  .about__right--image {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -149,6 +152,9 @@
   .skills-icons img {
     width: 40px;
     height: 40px;
+  }
+  .about__right--image {
+    display: none;
   }
 }
 

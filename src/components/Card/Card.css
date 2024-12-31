@@ -21,7 +21,6 @@
 }
 
 .card__btn {
-  text-decoration: none;
   padding: 1rem 2rem;
   background-color: var(--color-lime-green, #68d391);
   color: white;
