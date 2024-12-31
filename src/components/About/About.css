@@ -1,7 +1,7 @@
 .about {
   display: flex;
   flex-direction: row;
-  max-height: 100vh;
+
   background-color: var(--color-dark, #1e1e1e);
   border-radius: 3rem;
   overflow: hidden;
@@ -67,6 +67,7 @@
 .skills-icons {
   display: flex;
   gap: 1rem;
+  width: 100%;
   flex-wrap: wrap;
 }
 
@@ -98,6 +99,7 @@
   }
 
   .about__left {
+    margin: 0 auto;
     padding: 3rem;
     align-items: center;
   }
@@ -137,7 +139,9 @@
     font-size: 3rem;
     margin-bottom: 1rem;
   }
-
+  .about__left {
+    margin: 0 auto;
+  }
   .about__left--image {
     width: 80%;
   }
