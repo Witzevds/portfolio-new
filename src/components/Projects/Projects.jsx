@@ -4,9 +4,17 @@ const Projects = () => {
   return (
     <>
       <div className="projects">
-        <Card image={"ui-illustration.svg"} title={"UI & UX"} />
-        <Card image={"illustrations.png"} title={"illustrations"} />
-        <Card image={"web-development.png"} title={"Web development"} />
+        <Card image={"ui-illustration.svg"} title={"UI & UX"} page={"UI-UX"} />
+        <Card
+          image={"illustrations.png"}
+          title={"illustrations"}
+          page={"Illustrations"}
+        />
+        <Card
+          image={"web-development.png"}
+          title={"Web development"}
+          page={"Web-development"}
+        />
       </div>
     </>
   );

@@ -1,6 +1,6 @@
 import "./Card.css";
 import { Link } from "react-router-dom";
-const Card = ({ title, image }) => {
+const Card = ({ title, image, page }) => {
   return (
     <div className="card">
       <h3 className="card__title">{title}</h3>
@@ -9,7 +9,7 @@ const Card = ({ title, image }) => {
         src={`/assets/images/${image}`}
         alt={title}
       />
-      <Link to="/Projects">
+      <Link to={`/${page}`}>
         <a className="card__btn" href="">
           {title}
         </a>

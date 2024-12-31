@@ -5,6 +5,9 @@ import Projects from "./pages/Projects/Projects.jsx";
 import App from "./pages/App/App.jsx";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import UIUXPage from "./pages/UI-UX/UI-UX.jsx";
+import IllustrationsPage from "./pages/Illustrations/Illustrations.jsx";
+import WebDevPage from "./pages/Web-dev/Web-dev.jsx";
 
 const router = createBrowserRouter([
   {
@@ -12,8 +15,16 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/Projects",
-    element: <Projects />,
+    path: "/Illustrations",
+    element: <IllustrationsPage />,
+  },
+  {
+    path: "/UI-UX",
+    element: <UIUXPage />,
+  },
+  {
+    path: "/Web-development",
+    element: <WebDevPage />,
   },
 ]);
 
