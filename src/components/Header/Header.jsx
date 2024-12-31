@@ -1,3 +1,4 @@
+import DownloadCVButton from "../DownloadCVButton/DownloadCVButton";
 import "./Header.css";
 
 const Header = () => {
@@ -7,11 +8,10 @@ const Header = () => {
         <nav className="header-text">
           <div className="header-text__left">
             <a href="/">Home</a>
-            <a href="/Projects">Portfolio</a>
+            <a href="#projects">Portfolio</a>
           </div>
           <span className="header-text__center">Witze Van der Straeten</span>
           <div className="header-text__right">
-            <a href="/Service">Service</a>
             <a href="/Contact">Contact</a>
           </div>
         </nav>

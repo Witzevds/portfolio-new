@@ -2,3 +2,6 @@
   --color-dark: #212121;
   --color-lime-green: #79bd96;
 }
+html {
+  scroll-behavior: smooth;
+}

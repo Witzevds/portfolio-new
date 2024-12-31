@@ -3,7 +3,7 @@ import "./Projects.css";
 const Projects = () => {
   return (
     <>
-      <div className="projects">
+      <div id="projects" className="projects">
         <Card image={"ui-illustration.svg"} title={"UI & UX"} page={"UI-UX"} />
         <Card
           image={"illustrations.png"}

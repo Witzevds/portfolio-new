@@ -1,30 +1,72 @@
 .projects-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 2.5rem; /* Meer ruimte tussen de kaarten */
+  padding: 2rem;
   margin: 0 auto;
+  max-width: 1400px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-dark, #1e1e1e);
+  border: 2px solid var(--color-lime-green, #48bb78);
+  border-radius: 1.5rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: 400px;
+  height: 500px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative; /* Belangrijk om de knop correct te positioneren */
+  padding-bottom: 2rem; /* Ruimte onderin voor de knop */
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.project-card__title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-lime-green, #48bb78);
+  margin: 1rem 0;
+}
+
+.project-card__image {
   width: 100%;
-  color: var(--color-lime-green);
-  & .project-card {
-    border: 1px solid black;
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--color-dark);
-    border-radius: 1rem;
-    align-items: center;
-    & .project-card__title {
-      text-align: center;
-    }
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 2px solid var(--color-lime-green, #48bb78);
+}
 
-    & .project-card__image {
-      width: 90%;
-      border-radius: 1rem;
-    }
+.project-card__description {
+  font-size: 1.2rem;
+  color: #f5f5f5;
+  padding: 1.5rem;
+  line-height: 1.8;
+}
 
-    & .project-card__description {
-      width: 90%;
-      color: white;
-    }
-  }
+.project-card__btn {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  background-color: var(--color-lime-green, #48bb78);
+  color: #1e1e1e;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 0.7rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  position: absolute; /* Zorgt ervoor dat de knop onderaan blijft */
+  bottom: 1rem; /* Speling aan de onderkant */
+}
+
+.project-card__btn:hover {
+  background-color: #3a9d5c;
+  color: #ffffff;
 }

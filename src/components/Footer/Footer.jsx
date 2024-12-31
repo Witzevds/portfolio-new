@@ -1,3 +1,4 @@
+import DownloadCVButton from "../DownloadCVButton/DownloadCVButton";
 import "./Footer.css";
 
 const Footer = () => {
@@ -26,6 +27,7 @@ const Footer = () => {
             <a href="">Linkedin</a>
             <a href="">Instagram</a>
             <a href="">Github</a>
+            <DownloadCVButton />
           </div>
         </div>
       </div>

@@ -51,6 +51,15 @@ const Projects = ({ type }) => {
       description:
         "A modern digital portrait created using Procreate and Photoshop.",
     },
+    {
+      id: "6",
+      type: "web",
+      title: "Gentse Luht",
+      image: "gentse-luht.png",
+      website: "https://gentse-luht.onrender.com/",
+      description:
+        "Its a website for a school project where we had to use a API to get data and show it on the website.",
+    },
   ];
 
   // Filter projects based on the type prop
@@ -59,6 +68,7 @@ const Projects = ({ type }) => {
   return (
     <>
       <Header />
+      <h1>{type}</h1>
       <div className="projects-container">
         {projectList.map((project) => (
           <ProjectCard
